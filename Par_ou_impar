@@ -1,0 +1,14 @@
+# Solicita que o usuário digite um valor.
+valor = int(input("Digite um número"))
+
+# O programa verifica se a condição dentro do 'if' é verdadeira.
+
+# Se o resto da divisão do 'valor' por 2 for EXATAMENTE igual (==) a 0,
+# isso significa que o número é divisível por 2, ou seja, é PAR.
+if valor % 2 == 0:
+    # Se a condição for verdadeira (o número é par), exibe esta mensagem.
+    print("Valor é par ")
+else:
+    # Se a condição for falsa (o resto não é 0), o número é ímpar.
+    # Executa este bloco caso a condição do 'if' não seja atendida.
+    print("Valor é impar ")
