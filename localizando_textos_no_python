@@ -1,0 +1,29 @@
+# --- Dados Iniciais ---
+nome = "gustavo freitas"
+email = "guga@gmail.com"
+
+# ----------------------------------------------------
+# 1. Extração do Servidor de Email
+# ----------------------------------------------------
+posicao = email.find("@")  # Localiza o índice do caractere '@'.
+servidor = email[posicao + 1 :]  # Usa fatiamento (slice) para pegar tudo após o '@'.
+print(servidor)  # Exibe 'gmail.com'.
+
+# ----------------------------------------------------
+# 2. Extração e Formatação do Primeiro Nome
+# ----------------------------------------------------
+posicao_espaco = nome.find(" ")  # Localiza o índice do primeiro espaço.
+primeiro_nome = nome[:posicao_espaco]  # Pega a substring do início até o espaço (o primeiro nome).
+primeiro_nome = primeiro_nome.capitalize()  # Coloca a primeira letra em maiúscula.
+print(primeiro_nome)  # Exibe 'Gustavo'.
+
+# ----------------------------------------------------
+# 3. Mensagem de Confirmação
+# ----------------------------------------------------
+mensagem = f"usuário: {primeiro_nome} foi cadastrado com sucesso no email: {email}"
+# Cria uma f-string para formatar a mensagem com as variáveis extraídas.
+print(mensagem)
+
+gmail.com
+Gustavo
+usuário: Gustavo foi cadastrado com sucesso no email: guga@gmail.com
